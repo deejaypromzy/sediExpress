@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.projectwork.sediexpress.AboutFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_about"></fragment>
+
+    <fragment
+        android:id="@+id/AgentFragment"
+        android:name="com.projectwork.sediexpress.AgentFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home"></fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.projectwork.sediexpress.DeliveryFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/activity_maps"></fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.projectwork.sediexpress.ProfileFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_first"></fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.projectwork.sediexpress.HistoryFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home"></fragment>
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.projectwork.sediexpress.FAQFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_faq"></fragment>
+    <activity
+        android:id="@+id/requestActivity"
+        android:name="com.projectwork.sediexpress.RequestActivity"
+        android:label="activity_request"
+        tools:layout="@layout/activity_request" />
+    <activity
+        android:id="@+id/agentFragment"
+        android:name="com.projectwork.sediexpress.AddAgent"
+        android:label="Add Agent"
+        tools:layout="@layout/activity_add_agent" />
+
+    <activity
+        android:id="@+id/adminFragment"
+        android:name="com.projectwork.sediexpress.AddAdmin"
+        android:label="Add Admin"
+        tools:layout="@layout/activity_add_agent" />
+
+    <activity
+        android:id="@+id/complainFragment"
+        android:name="com.projectwork.sediexpress.ComplainActivity"
+        android:label="Complaints"
+        tools:layout="@layout/activity_complain" />
+
+</navigation>
