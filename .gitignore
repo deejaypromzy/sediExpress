@@ -12,6 +12,5 @@
 /captures
 .externalNativeBuild
 .cxx
-/app/
 /app/release
 /app/google-services.json
